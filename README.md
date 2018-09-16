@@ -1,5 +1,8 @@
 # Wifi Cards
-> A Latex template to share Wi-Fi credentials.
+> A Latex template to share Wi-Fi credentials as business cards.
+
+## Example
+![](wifi.svg)
 
 ## Dependencies
 - `texlive`
@@ -23,9 +26,6 @@ Change the following lines as appropriate:
 or
 
 - Run `pdflatex wifi.tex`
-
-## Example
-![](wifi.svg)
 
 ## License
 This project is licensed under the MIT License - see [`LICENSE`](LICENSE) for details.
