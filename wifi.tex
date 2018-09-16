@@ -1,0 +1,32 @@
+\documentclass[final]{article}
+\usepackage[paperwidth=55mm,paperheight=85mm,margin=0.4cm,noheadfoot]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{qrcode}
+\pagenumbering{gobble}
+
+%VARIABLES
+\newcommand{\location}{124 Conch Street}
+\newcommand{\ssid}{PINEAPPLE-5G}
+\newcommand{\password}{gary1234}
+\newcommand{\authtype}{WPA2}
+
+\begin{document}
+\begin{center}
+
+\section*{\location}
+\vspace*{\fill}
+
+\qrcode[height=4.6cm]{WIFI:S:\ssid;T:\authtype;P:\password;;}
+\vspace{0.5cm}
+
+\begin{Large}
+\begin{tabular}{cc}
+\faWifi & \texttt{\ssid} \\
+\faKey & \texttt{\password} \\
+\end{tabular}
+\end{Large}
+
+\vspace*{\fill}
+\end{center}
+\end{document}
