@@ -1,6 +1,5 @@
 \documentclass[final]{article}
-\usepackage[paperwidth=55mm,paperheight=85mm,margin=0.4cm,noheadfoot]{geometry}
-\usepackage[utf8]{inputenc}
+\usepackage[paperwidth=55mm,paperheight=85mm,tmargin=0.5cm,bmargin=0.2cm,hmargin=0.2cm,noheadfoot]{geometry}
 \usepackage{fontawesome}
 \usepackage{qrcode}
 \pagenumbering{gobble}
@@ -17,15 +16,16 @@
 \section*{\location}
 \vspace*{\fill}
 
-\qrcode[height=4.6cm]{WIFI:S:\ssid;T:\authtype;P:\password;;}
-\vspace{0.5cm}
+\qrcode[height=4.5cm]{WIFI:S:\ssid;T:\authtype;P:\password;;}
+\vspace{0.2cm}
 
-\begin{Large}
+\begin{LARGE}
+\setlength\tabcolsep{1.5pt}
 \begin{tabular}{cc}
 \faWifi & \texttt{\ssid} \\
 \faKey & \texttt{\password} \\
 \end{tabular}
-\end{Large}
+\end{LARGE}
 
 \vspace*{\fill}
 \end{center}
